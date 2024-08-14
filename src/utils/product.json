@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": "$59.99",
+      "image": "https://via.placeholder.com/150/0000FF/808080?text=Headphones"
+    },
+    {
+      "id": 2,
+      "name": "Bluetooth Speaker",
+      "price": "$29.99",
+      "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Speaker"
+    },
+    {
+      "id": 3,
+      "name": "Smartwatch",
+      "price": "$149.99",
+      "image": "https://via.placeholder.com/150/00FF00/000000?text=Smartwatch"
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "price": "$799.99",
+      "image": "https://via.placeholder.com/150/FFFF00/000000?text=Laptop"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "price": "$199.99",
+      "image": "https://via.placeholder.com/150/FF00FF/FFFFFF?text=Tablet"
+    },
+    {
+      "id": 6,
+      "name": "Wireless Mouse",
+      "price": "$19.99",
+      "image": "https://via.placeholder.com/150/000000/FFFFFF?text=Mouse"
+    },
+    {
+      "id": 7,
+      "name": "Gaming Keyboard",
+      "price": "$89.99",
+      "image": "https://via.placeholder.com/150/FFA500/000000?text=Keyboard"
+    },
+    {
+      "id": 8,
+      "name": "External Hard Drive",
+      "price": "$99.99",
+      "image": "https://via.placeholder.com/150/800080/FFFFFF?text=Hard+Drive"
+    },
+    {
+      "id": 9,
+      "name": "Smartphone",
+      "price": "$599.99",
+      "image": "https://via.placeholder.com/150/008080/FFFFFF?text=Smartphone"
+    },
+    {
+      "id": 10,
+      "name": "Fitness Tracker",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150/00FFFF/000000?text=Fitness+Tracker"
+    }
+  ]
+  

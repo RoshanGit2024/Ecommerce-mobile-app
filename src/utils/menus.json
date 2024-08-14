@@ -1,0 +1,69 @@
+{
+    "activity": [
+        {
+            "id": 1,
+            "icon": "heart",
+            "library": "AntDesign",
+            "menu": "Wish List",
+            "color": "red"
+        },
+        {
+            "id": 2,
+            "icon": "share",
+            "library": "Entypo",
+            "menu": "Shared Products",
+            "color": "blue"
+        },
+        {
+            "id": 3,
+            "icon": "star",
+            "library": "AntDesign",
+            "menu": "Ratings",
+            "color": "orange"
+        },
+        {
+            "id": 4,
+            "icon": "cubes",
+            "library": "FontAwesome",
+            "menu": "Your Orders",
+            "color": "pink"
+        }
+    ],
+    "others": [
+        {
+            "id": 1,
+            "icon": "setting",
+            "library": "AntDesign",
+            "menu": "Settings",
+            "color": "gray"
+        },
+        {
+            "id": 2,
+            "icon": "star",
+            "library": "AntDesign",
+            "menu": "Rate App",
+            "color": "orange"
+        },
+        {
+            "id": 3,
+            "icon": "legal",
+            "library": "FontAwesome",
+            "menu": "Legal and Policies",
+            "color": "purple"
+        },
+        {
+            "id": 4,
+            "icon": "logout",
+            "library": "AntDesign",
+            "menu": "Logout",
+            "color": "red"
+        },
+        {
+            "id": 5,
+            "icon": "questioncircleo",
+            "library": "AntDesign",
+            "menu": "Help",
+            "color": "blue"
+        }
+    ]
+}
