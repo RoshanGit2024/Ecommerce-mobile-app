@@ -8,20 +8,24 @@ import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import CartScreen from './src/screens/CartScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import MyOrders from './src/screens/MyOrders';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Login from './src/screens/Login';
+import OtpScreen from './src/screens/OtpScreen';
 
 const Tab = createBottomTabNavigator()
+const Stack = createNativeStackNavigator()
 
-const App = () => {
-    return (
-        <NavigationContainer>
-            <Tab.Navigator 
+function TabNavigator({openUserId,setOpenuserId}){
+
+    return(
+        <Tab.Navigator 
             screenOptions={{
                 tabBarActiveTintColor:'red'
             }}
             >
                 <Tab.Screen 
                 name="Home" 
-                component={HomeScreen}
+                children={(props)=><HomeScreen {...props} openUserId={openUserId} setOpenuserId={setOpenuserId}/>}
                 options={{
                     tabBarIcon:({size,focused,color})=>{
                         return <Entypo name={"home"} size={size} color={color}/>
@@ -50,6 +54,17 @@ const App = () => {
                 }}
                 />
             </Tab.Navigator>
+    )
+}
+const App = () => {
+    const [openUserId, setOpenuserId] = useState(false)
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName='TabNavigator'>
+                <Stack.Screen name='TabNavigator' children={()=><TabNavigator openUserId={openUserId} setOpenuserId={setOpenuserId}/>} options={{headerShown:false}}/>
+                <Stack.Screen name='SignUp' component={Login}/>
+                <Stack.Screen name='OTP' children={()=><OtpScreen openUserId={openUserId} setOpenuserId={setOpenuserId}/>} />
+            </Stack.Navigator>
         </NavigationContainer>
     );
 }

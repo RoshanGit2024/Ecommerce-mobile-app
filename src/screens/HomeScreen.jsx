@@ -9,10 +9,11 @@ import Header from '../components/Header';
 import Category from '../components/Category';
 import ProductCard from '../components/ProductCard';
 import products from '../utils/product.json'
+import UserIdentity from '../components/Modals/UserIdentity';
 //const Tab = createBottomTabNavigator()
 
 const categories = ["Trending Now", "All", "New", "Mens", "Womens"]
-const HomeScreen = () => {
+const HomeScreen = ({openUserId,setOpenuserId}) => {
     const [selectedCategory, setSelectedCategory] = useState(null)
     const[isLiked,setIsLiked]=useState([])
     const handleLike = (product)=>{
@@ -67,6 +68,13 @@ const HomeScreen = () => {
                     paddingBottom:150
                 }}
             />
+
+            {openUserId&&
+            <UserIdentity
+            openUserId={openUserId}
+            setOpenuserId={setOpenuserId}
+            />
+            }
         </View>
     );
 }
